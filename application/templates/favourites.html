@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block body_content %}
+
+<H1>Welcome to my{{title}} page  </H1>
+<hr>
+<p>A list of my favourite things</p>
+<ul>
+  {% for item in my_list%}
+  <li>{{item}}</li>
+  {% endfor %}
+</ul>
+{% endblock %}
